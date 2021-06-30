@@ -2,18 +2,30 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* General reusable classes */
 
-.projects-show-more-mobile{
-  padding-bottom: 250px!important;
+.toggle-display-inline-b {
+  display: inline-block !important;
+}
+
+.home-margin-reduce-toggle {
+  margin-top: 2rem !important;
+}
+
+.header-width-toggle {
+  width: 100% !important;
+}
+
+.projects-show-more-mobile {
+  padding-bottom: 250px !important;
 }
 .dot {
   height: 1rem;
   width: 1rem;
-  background-color: #125D98;
+  background-color: #125d98;
   border-radius: 50%;
   display: inline-block;
   margin-right: 1rem;
@@ -59,7 +71,8 @@ body {
   font-weight: bold;
 }
 
-.close-btn:hover, .close-btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -85,12 +98,12 @@ body {
 
 .card {
   width: 80%;
-  border: 0px solid #6D6A75 !important;
+  border: 0px solid #6d6a75 !important;
   border-radius: 10%;
 }
 
 .card-body {
-  background-color: #F0F0F0 !important;
+  background-color: #f0f0f0 !important;
 }
 
 .card-title {
@@ -103,12 +116,12 @@ body {
 }
 
 /* Header section */
-header {
+.header {
   background-color: white;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 3;
+  width: 100%;
 }
 
 .flex_container {
@@ -164,7 +177,7 @@ header {
 }
 
 .nav_links a:hover {
-  color: #BfBDC1;
+  color: #bfbdc1;
 }
 
 /* navbar logo and text on the right*/
@@ -188,7 +201,7 @@ header {
 }
 
 .nav_links .icons:hover {
-  color: #BfBDC1;
+  color: #bfbdc1;
 }
 
 .toggle-icon {
@@ -196,9 +209,10 @@ header {
 }
 
 /* side bars */
-.sidenavbar-textbox-l, .sidenavbar-textbox-r {
+.sidenavbar-textbox-l,
+.sidenavbar-textbox-r {
   padding: 0.9rem 6rem;
-  background-color: #BFBDC1;
+  background-color: #bfbdc1;
   display: inline-block;
 }
 
@@ -213,7 +227,8 @@ header {
 }
 
 /* left side bar */
-.left-sidenav, .right-sidenav {
+.left-sidenav,
+.right-sidenav {
   height: 100%;
   width: 2.5rem;
   position: fixed;
@@ -276,7 +291,8 @@ header {
 }
 
 /* both right and left side bar */
-.left-sidenav a:hover, .right-sidenav a:hover {
+.left-sidenav a:hover,
+.right-sidenav a:hover {
   color: white;
 }
 
@@ -316,6 +332,8 @@ header {
   animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  @media only screen and (max-width: 1000px) {
+  }
 }
 
 @keyframes main-h-move {
@@ -335,7 +353,7 @@ header {
 .home-student {
   font-size: 1.5rem;
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 60%;
 }
 
@@ -346,8 +364,8 @@ header {
 }
 
 .major {
-  color: #D0D0D0;
-  font-family: "Montserrat", sans-serif;
+  color: #d0d0d0;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 1%;
   font-size: 1.2rem;
 }
@@ -383,7 +401,7 @@ header {
 
 .about-heading {
   font-family: 'Merriweather', serif;
-  color: #37323E;
+  color: #37323e;
   display: inline-block;
 }
 
@@ -411,7 +429,7 @@ header {
 
 /* EXPERINCE section */
 .experience {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 4% 0;
   margin: 1rem 2.5rem 0;
@@ -498,7 +516,6 @@ header {
 .awards-text {
   width: 300px;
   height: 300px;
-  ;
 }
 
 .awards-row {
@@ -523,7 +540,7 @@ header {
 
 .awards-heading {
   font-family: 'Mate SC', serif;
-  color: #0C4271;
+  color: #0c4271;
   text-align: center;
   font-size: 3rem;
   padding-bottom: 1.5rem;
@@ -536,10 +553,11 @@ header {
 }
 
 .awards-year {
-  flex-basis: 30%
+  flex-basis: 30%;
 }
 
-.awards-showMoreBtn-cont, .awards-showLessBtn-cont {
+.awards-showMoreBtn-cont,
+.awards-showLessBtn-cont {
   text-align: center;
   margin: 0 auto 2rem;
 }
@@ -550,7 +568,7 @@ header {
 
 /* PROJECTS section */
 .projects {
-  background-color: #B0B0B0;
+  background-color: #b0b0b0;
   margin: 0 2.5rem 3rem;
   text-align: center;
   padding: 3rem 2rem 2rem;
@@ -615,7 +633,7 @@ header {
 
 .modal-h {
   font-family: 'Hammersmith One', sans-serif;
-  color: #125D98;
+  color: #125d98;
   font-weight: 500;
   font-size: 1.7rem;
   display: inline-block;
@@ -624,7 +642,7 @@ header {
 
 .modal-sub-h {
   font-family: 'Hammersmith One', sans-serif;
-  color: #125D98;
+  color: #125d98;
   font-weight: 500;
   font-size: 1.2rem;
   display: inline-block;
@@ -651,7 +669,7 @@ header {
 }
 
 .projects-highlight {
-  border-bottom: 2px solid #125D98;
+  border-bottom: 2px solid #125d98;
 }
 
 .projects-btn {
@@ -684,12 +702,12 @@ header {
 
 .btn-projects:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #FFF;
+  color: #fff;
 }
 
 .projects-in-text-link {
   text-decoration: none;
-  color: #125D98;
+  color: #125d98;
 }
 
 .projects-in-text-link:hover {
@@ -707,7 +725,7 @@ header {
 }
 
 .modal-btn {
-  color: #125D98;
+  color: #125d98;
   border: 1px solid black;
 }
 
@@ -717,7 +735,7 @@ header {
 
 /* CONTACT section */
 .contact {
-  margin: 0 2rem;
+  margin: 2rem 2rem 0;
   background-color: #848482;
   padding: 4rem 3rem 2rem;
 }
@@ -767,6 +785,7 @@ header {
   text-align: center;
   list-style: none;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav_links_m a {
@@ -776,8 +795,9 @@ header {
 }
 
 /* MEDIA queries */
-@media (max-width: 1544px) and (min-width: 1000px) {
-  .mobile-nav-links, .nav_links_m{
+@media only screen and (max-width: 1544px) and (min-width: 1000px) {
+  .mobile-nav-links,
+  .nav_links_m {
     display: none;
   }
 
@@ -836,9 +856,9 @@ header {
   }
 }
 
-@media (max-width: 1000px) {
-
-  .mobile-nav-links, .nav_links_m{
+@media only screen and (max-width: 1000px) {
+  .mobile-nav-links,
+  .nav_links_m {
     display: none;
   }
 
@@ -858,7 +878,7 @@ header {
   }
 
   .project-icon {
-    display: none
+    display: none;
   }
 
   .projects-btn {
@@ -871,15 +891,13 @@ header {
     margin: 0;
   }
 
-
   #projects-show-more-btn {
     margin-top: 13rem;
   }
 
-  #projects-showMore-cont{
-    padding-top: 15rem!important;
+  #projects-showMore-cont {
+    padding-top: 15rem !important;
   }
-
 
   /* #projects-showMore-cont{
     margin-top: 40rem!important;
@@ -907,12 +925,13 @@ header {
     margin: 1rem 0 0;
   }
 
-  .awards, .contact {
+  .awards,
+  .contact {
     margin: 0;
   }
 
   /* header change */
-  header {
+  .header {
     font-size: 1rem;
   }
 
@@ -987,24 +1006,31 @@ header {
   }
 
   /* changing the awards section */
-  .awards-container, .awards-row, .awards-col {
+  .awards-container,
+  .awards-row,
+  .awards-col {
     margin: 0 auto !important;
     text-align: center;
   }
 
   .awards-text {
     margin: 0 auto !important;
+    text-align: left !important;
+  }
+
+  /* contact page */
+  .contact {
+    margin-top: 4em;
   }
 }
 
-
-@media (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   #projects-show-more-btn {
     margin-top: 35rem;
   }
 
-  #projects-showMore-cont{
-    margin-top: 25rem!important;
+  #projects-showMore-cont {
+    margin-top: 25rem !important;
   }
 
   .left-sidenav {
@@ -1044,10 +1070,10 @@ header {
 
   .navtop-middle-part .toggle-icon {
     display: inline-block;
-    text-align: right;
     font-size: 2rem;
-    position: relative;
-    left: 90%;
+    position: absolute;
+    top: 4%;
+    right: 11%;
   }
 }
 
