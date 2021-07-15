@@ -64,7 +64,6 @@ body {
 }
 
 .close-btn {
-  display: inline-block;
   color: #aaa;
   float: right;
   font-size: 1.5em;
@@ -1074,6 +1073,18 @@ body {
     position: absolute;
     top: 4%;
     right: 11%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* home section text */
+  .home-text {
+    font-size: 4rem;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    z-index: 2;
+    word-spacing: 3px;
   }
 }
 
