@@ -472,6 +472,18 @@ body {
 .exp-col-2 {
   background: url("../images/resize-hypeExp.png");
 }
+.insta-hype {
+  margin-right: 0.3em;
+}
+.img-exp {
+  width: 40%;
+  display: block;
+  text-align: center;
+  margin: 1em auto 1.5em;
+}
+.img-exp:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
 
 .exp-col-3 {
   background: url("../images/resize-ai-commons.png");
