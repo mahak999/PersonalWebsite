@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* General reusable classes */
@@ -86,6 +86,11 @@ body {
   left: 27%;
 }
 
+#video-utmist {
+  position: relative;
+  left: 10%;
+}
+
 .row {
   margin-top: 1rem;
 }
@@ -107,7 +112,7 @@ body {
 
 .card-title {
   font-weight: 550;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 .card-sub-title {
@@ -188,7 +193,7 @@ body {
 }
 
 .nav-name {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: 700;
   position: relative;
   bottom: 12%;
@@ -313,7 +318,7 @@ body {
 }
 
 .home-text {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 6rem;
   font-weight: 900;
   width: 30%;
@@ -352,7 +357,7 @@ body {
 .home-student {
   font-size: 1.5rem;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 60%;
 }
 
@@ -364,7 +369,7 @@ body {
 
 .major {
   color: #d0d0d0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 1%;
   font-size: 1.2rem;
 }
@@ -399,7 +404,7 @@ body {
 }
 
 .about-heading {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: #37323e;
   display: inline-block;
 }
@@ -421,7 +426,7 @@ body {
   width: 55%;
   color: black;
   font-weight: 400;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1.2rem;
   padding-bottom: 3%;
 }
@@ -447,7 +452,7 @@ body {
 .experience-h {
   text-align: center;
   padding-top: 23%;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
   color: white;
   margin: 1% 4% 0%;
@@ -461,31 +466,31 @@ body {
 
 /* exp-1 */
 .exp-col-1 {
-  background: url('../images/resize-medcvrExp.png');
+  background: url("../images/resize-medcvrExp.png");
 }
 
 .exp-col-2 {
-  background: url('../images/resize-hypeExp.png');
+  background: url("../images/resize-hypeExp.png");
 }
 
 .exp-col-3 {
-  background: url('../images/resize-ai-commons.png');
+  background: url("../images/resize-ai-commons.png");
 }
 
 .exp-col-4 {
-  background: url('../images/resize-hacks.png');
+  background: url("../images/resize-hacks.png");
 }
 
 .exp-col-5 {
-  background: url('../images/resize-uoftAI.png');
+  background: url("../images/resize-uoftAI.png");
 }
 
 .exp-col-6 {
-  background: url('../images/resize-UTMIST.png');
+  background: url("../images/resize-UTMIST.png");
 }
 
 .exp-col-7 {
-  background: url('../images/resize-PL.png');
+  background: url("../images/resize-PL.png");
 }
 
 .exp-row {
@@ -538,7 +543,7 @@ body {
 }
 
 .awards-heading {
-  font-family: 'Mate SC', serif;
+  font-family: "Mate SC", serif;
   color: #0c4271;
   text-align: center;
   font-size: 3rem;
@@ -582,7 +587,7 @@ body {
 
 .projects-heading-main {
   color: black;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bolder;
   margin-bottom: 4rem;
   display: inline-block;
@@ -596,7 +601,7 @@ body {
 .projects-h {
   text-align: center;
   padding-top: 5%;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
   color: white;
   margin: 1% 4% 0%;
@@ -626,12 +631,12 @@ body {
 }
 
 .project-col-1 {
-  background: url('../images/resize-csc207.png');
+  background: url("../images/resize-csc207.png");
   color: black;
 }
 
 .modal-h {
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   color: #125d98;
   font-weight: 500;
   font-size: 1.7rem;
@@ -640,7 +645,7 @@ body {
 }
 
 .modal-sub-h {
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   color: #125d98;
   font-weight: 500;
   font-size: 1.2rem;
@@ -649,17 +654,17 @@ body {
 }
 
 .project-col-2 {
-  background: url('../images/resize-NST.png');
+  background: url("../images/resize-NST.png");
   color: white;
 }
 
 .project-col-3 {
-  background: url('../images/resize-doodle.png');
+  background: url("../images/resize-doodle.png");
   color: white;
 }
 
 .project-col-4 {
-  background: url('../images/resize-flappy.png');
+  background: url("../images/resize-flappy.png");
   color: white;
 }
 
