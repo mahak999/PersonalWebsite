@@ -304,7 +304,13 @@ body {
 .home {
   margin: 3.9rem 2rem 7rem;
   background-color: #848482;
-  padding: 3rem;
+  padding: 3rem 3rem 14rem;
+}
+
+@media (max-width: 1000px) {
+  .home {
+    padding: 3rem;
+  }
 }
 
 .home-img {
@@ -384,7 +390,7 @@ body {
 }
 
 .ai-commons {
-  width: 60%;
+  width: 70%;
 }
 
 /* ABOUT section */
@@ -467,6 +473,11 @@ body {
 /* exp-1 */
 .exp-col-1 {
   background: url("../images/resize-medcvrExp.png");
+}
+
+.modal-link {
+  text-decoration: none;
+  color: rgba(18, 93, 152, 0.8);
 }
 
 .exp-col-2 {
@@ -851,7 +862,7 @@ body {
   }
 
   .home-text {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 30%;
     position: relative;
     left: 60%;
@@ -1059,7 +1070,7 @@ body {
 
   /* home section text */
   .home-text {
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     top: 30rem;
     left: 2rem;
