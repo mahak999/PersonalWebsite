@@ -106,3 +106,12 @@ document.getElementById("project-3-btn").onclick = function () {
 document.getElementsByClassName("close-p3")[0].onclick = function () {
   document.getElementById("project-3-modal").style.display = "none";
 };
+
+// project 4
+document.getElementById("project-4-btn").onclick = function () {
+  document.getElementById("project-4-modal").style.display = "block";
+};
+
+document.getElementsByClassName("close-p4")[0].onclick = function () {
+  document.getElementById("project-4-modal").style.display = "none";
+};
