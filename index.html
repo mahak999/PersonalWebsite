@@ -1,710 +1,1187 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mahak Khurmi</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Mahak Khurmi</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/724368d1a0.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- font awesome script -->
-  <script src="https://kit.fontawesome.com/724368d1a0.js" crossorigin="anonymous"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Prata&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  <body>
+    <!-- header section: top navbar -->
+    <section class="header" id="header-id">
+      <!-- nav bar -->
 
-  <!-- viewport meta tag -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <div class="flex_container">
+        <div class="navtop-left-part">
+          <div class="flex_container_inside">
+            <div class="flex_item">
+              <img class="logo-img" src="images/logo.jpeg" alt="logo" />
+            </div>
 
-</head>
-
-<body>
-
-  <!-- header section: top navbar -->
-  <section class="header" id="header-id">
-    <!-- nav bar -->
-
-    <div class="flex_container">
-
-
-      <div class="navtop-left-part">
-        <div class="flex_container_inside">
-          <div class="flex_item">
-            <img class="logo-img" src="images/logo.jpeg" alt="logo">
-          </div>
-
-          <div class="flex_item">
-            <span class="nav-name">Mahak <br /> Khurmi</span>
+            <div class="flex_item">
+              <span class="nav-name"
+                >Mahak <br />
+                Khurmi</span
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="navtop-middle-part">
-        <ul class="nav_links">
-          <li><a href="#home-section-link">HOME</a></li>
-          <li><a href="#about-section-link">ABOUT</a></li>
-          <li><a href="#experience-section-link">EXPERIENCE</a></li>
-          <li><a href="#projects-section-link">PROJECTS</a></li>
-          <li><a href="#awards-section-link">AWARDS</a></li>
-          <li><a href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing" target="blank">RESUME</a></li>
-          <li><a href="#contact-section-link">CONTACT</a></li>
-        </ul>
-
-        <div class="toggle-icon" id="toggle-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-
-      <div class="navtop-right-part">
-        <ul class="nav_links">
-          <!-- <li><a class="cta" href="#"><span id="nav-contact">CONTACT</span></a></li> -->
-          <li><a href="https://www.linkedin.com/in/mahak-khurmi999/" target="blank"><i class="fab fa-linkedin icons"></i></a></li>
-          <li><a href="mailto:mahakkhurmi9@gmail.com"><i class="fas fa-envelope icons"></i></a></li>
-          <li><a href="https://github.com/mahak999" target="blank"><i class="fab fa-github icons"></i></a></li>
-          <li><a href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing" target="blank"><i class="fas fa-file icons"></i></a></li>
-        </ul>
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- /////// SIDE NAVS ////// -->
-
-  <!-- side bar 1 -->
-  <div class="left-sidenav">
-    <div class="sidenavbar-textbox-l rotate-left">
-      <a href="#projects-section-link">PROJECTS</a>
-    </div>
-  </div>
-
-
-  <!-- side bar 2 -->
-  <div class="right-sidenav">
-    <div class="sidenavbar-textbox-r rotate-right">
-      <a href="#contact-section-link">CONTACT</a>
-    </div>
-  </div>
-
-
-  <!-- mobile section nav links -->
-
-  <section class="mobile-nav-links" id="toggle-show-section">
-    <ul class="nav_links_m" id="nav-links-m">
-      <li><a href="#home-section-link">HOME</a></li>
-      <li><a href="#about-section-link">ABOUT</a></li>
-      <li><a href="#experience-section-link">EXPERIENCE</a></li>
-      <li><a href="#projects-section-link">PROJECTS</a></li>
-      <li><a href="#awards-section-link">AWARDS</a></li>
-      <li><a href="https://drive.google.com/file/d/1nsDYG6HZ0BRGZCdwSdW-qEI5U_u58kku/view?usp=sharing" target="blank">RESUME</a></li>
-      <li><a href="#contact-section-link">CONTACT</a></li>
-    </ul>
-
-  </section>
-
-
-
-  <!-- HOME section -->
-
-  <section class="home" id="home-id">
-    <a name="home-section-link"></a>
-    <div class="row">
-      <div class="col-lg-6 home-cont-l">
-        <h1 class="home-text">Mahak Khurmi</h1>
-        <div class="home-info-container">
-          <p class="home-student">4<sup>th</sup> year undergrad student at University of Toronto pursuing:</p>
-          <ul>
-            <li class="major">Computer Science Specialist</li>
-            <li class="major">Statistics Major</li>
-            <li class="major">Mathematics Minor</li>
+        <div class="navtop-middle-part">
+          <ul class="nav_links">
+            <li><a href="#home-section-link">HOME</a></li>
+            <li><a href="#about-section-link">ABOUT</a></li>
+            <li><a href="#experience-section-link">EXPERIENCE</a></li>
+            <li><a href="#projects-section-link">PROJECTS</a></li>
+            <li><a href="#awards-section-link">AWARDS</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing"
+                target="blank"
+                >RESUME</a
+              >
+            </li>
+            <li><a href="#contact-section-link">CONTACT</a></li>
           </ul>
-          <h3 class="home-student">CURRENT POSITIONS</h3>
-          <ul>
-            <li class="c-position major ai-commons"> Machine Learning Engineer at <a class="medcvr" href="https://www.huawei.com/ca/" target="blank">Huawei Technologies</a></li>
-            
+
+          <div class="toggle-icon" id="toggle-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="navtop-right-part">
+          <ul class="nav_links">
+            <!-- <li><a class="cta" href="#"><span id="nav-contact">CONTACT</span></a></li> -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mahak-khurmi999/"
+                target="blank"
+                ><i class="fab fa-linkedin icons"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:mahakkhurmi9@gmail.com"
+                ><i class="fas fa-envelope icons"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/mahak999" target="blank"
+                ><i class="fab fa-github icons"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing"
+                target="blank"
+                ><i class="fas fa-file icons"></i
+              ></a>
+            </li>
           </ul>
-          <h3 class="home-student">PAST POSITIONS</h3>
-          <ul>
-            <li class="c-position major ai-commons"> Research Assistant at <a class="medcvr" href="https://lish.harvard.edu/" target="blank">LISH, Harvard Business School</a></li>
-            <li class="c-position major">Undergraduate Researcher at <a class="medcvr" href="https://www.cs.toronto.edu/~lakahrs/" target="blank">MEDCVR</a> lab</li>
-            <li class="c-position major">Software Engineering Intern at <a class="medcvr" href="https://hypedocs.co/" target="blank">HypeDocs</a></li>
-          </ul>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-6 home-img-container home-cont-r">
-        <img class="home-img img-fluid" src="images/profile_new.jpg" alt="Mahak's profile pic">  <!-- images/mahak-cropped.png -->
-      </div>
+    <!-- /////// SIDE NAVS ////// -->
 
-    </div>
-
-  </section>
-
-  <!-- ABOUT Section -->
-  <section class="about">
-    <a name="about-section-link"></a>
-    <div class="about-heading-container">
-      <span class="dot"></span>
-      <h1 class="about-heading">ABOUT</h1>
-      <span class="dot"></span>
-    </div>
-
-
-    <div class="row">
-      <div class="col-lg-6 about-l">
-        <img class="about-img" src="images/mahak-img.png" alt="Mahak's picture">
-      </div>
-      <div class="col-lg-6 about-r">
-        <p class="about-r-text">Hello there! Thank you for viewing my website. I am a Computer Science Specialist student at University of Toronto with a passion for
-          innovation. I enjoy working on software development and machine learning projects.</p>
-        <p class="about-r-text"> I love working in a team and enjoy participating in hackathons and coding challenges. I am passionate about learning and communicating, and love to get my hands on new projects and ideas. </p>
-        <p class="about-r-text"> Fun fact: I have played Tennis professionally for until the age of 18 and now play for UofT Varsity tennis team.</p>
+    <!-- side bar 1 -->
+    <div class="left-sidenav">
+      <div class="sidenavbar-textbox-l rotate-left">
+        <a href="#projects-section-link">PROJECTS</a>
       </div>
     </div>
 
-  </section>
-
-
-  <!-- EXPERIENCE section -->
-  <section class="experience">
-    <a name="experience-section-link"></a>
-    <div class="experience-heading-container">
-      <span class="dot"></span>
-      <h1 class="projects-heading-main">EXPERIENCE</h1>
-      <span class="dot"></span>
+    <!-- side bar 2 -->
+    <div class="right-sidenav">
+      <div class="sidenavbar-textbox-r rotate-right">
+        <a href="#contact-section-link">CONTACT</a>
+      </div>
     </div>
 
+    <!-- mobile section nav links -->
 
-    <section class="experience-inside">
+    <section class="mobile-nav-links" id="toggle-show-section">
+      <ul class="nav_links_m" id="nav-links-m">
+        <li><a href="#home-section-link">HOME</a></li>
+        <li><a href="#about-section-link">ABOUT</a></li>
+        <li><a href="#experience-section-link">EXPERIENCE</a></li>
+        <li><a href="#projects-section-link">PROJECTS</a></li>
+        <li><a href="#awards-section-link">AWARDS</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1nsDYG6HZ0BRGZCdwSdW-qEI5U_u58kku/view?usp=sharing"
+            target="blank"
+            >RESUME</a
+          >
+        </li>
+        <li><a href="#contact-section-link">CONTACT</a></li>
+      </ul>
+    </section>
 
-      <div class="row exp-row">
+    <!-- HOME section -->
 
-        <div class="col-lg-4 col-md-6 exp" id="exp-1">
-          <div class="experience-col exp-col-1">
-            <div class="experince-onimage">
-              <h1 class="experience-h">Research Assistant at MEDCVR lab<br />
-                <span class="card-sub-title">May 2021 - Aug 2021</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-1-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-            <div class="explore-project-container" id="exp-1-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">Research Assistant at MEDCVR lab</h1>
-                <span class="close close-btn close-e1">&times;</span><br>
-                <h1 class="modal-sub-h">May 2021 - Aug 2021</h1>
-                <p class="projects-text">Designed a machine learning model capable of performing automatic lesion boundary detection using dermoscopy images. Devised deep learning models in <span class="projects-highlight">PyTorch (Python) </span> using architectures like <span class="projects-highlight">UNet, Attention Net, Pool Nets and Att-UNets </span> and tested them on the collected dataset to find the best architecture for the project
-                </p>
-                <button class="btn-projects modal-btn"> <a href="https://www.cs.toronto.edu/~lakahrs/" class="modal-link" target="blank">Website </a></button>
-              </div>
-            </div>
+    <section class="home" id="home-id">
+      <a name="home-section-link"></a>
+      <div class="row">
+        <div class="col-lg-6 home-cont-l">
+          <h1 class="home-text">Mahak Khurmi</h1>
+          <div class="home-info-container">
+            <p class="home-student">
+              4<sup>th</sup> year undergrad student at University of Toronto
+              pursuing:
+            </p>
+            <ul>
+              <li class="major">Computer Science Specialist</li>
+              <li class="major">Statistics Major</li>
+              <li class="major">Mathematics Minor</li>
+            </ul>
+            <h3 class="home-student">CURRENT POSITIONS</h3>
+            <ul>
+              <li class="c-position major ai-commons">
+                Machine Learning Engineer at
+                <a
+                  class="medcvr"
+                  href="https://www.huawei.com/ca/"
+                  target="blank"
+                  >Huawei Technologies</a
+                >
+              </li>
+            </ul>
+            <h3 class="home-student">PAST POSITIONS</h3>
+            <ul>
+              <li class="c-position major ai-commons">
+                Research Assistant at
+                <a
+                  class="medcvr"
+                  href="https://lish.harvard.edu/"
+                  target="blank"
+                  >LISH, Harvard Business School</a
+                >
+              </li>
+              <li class="c-position major">
+                Undergraduate Researcher at
+                <a
+                  class="medcvr"
+                  href="https://www.cs.toronto.edu/~lakahrs/"
+                  target="blank"
+                  >MEDCVR</a
+                >
+                lab
+              </li>
+              <li class="c-position major">
+                Software Engineering Intern at
+                <a class="medcvr" href="https://hypedocs.co/" target="blank"
+                  >HypeDocs</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- exp 2 -->
-
-        <div class="col-lg-4 col-md-6 exp" id="exp-2">
-          <div class="experience-col exp-col-2">
-
-            <div class="experince-onimage">
-              <h1 class="experience-h">Full-Stack Web Developer for HypeDocs<br />
-                <span class="card-sub-title">Jun 2021 - Sep 2021</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-2-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-
-            <div class="explore-project-container" id="exp-2-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">Full-Stack Web Developer for HypeDocs</h1>
-                <span class="close close-btn close-e2">&times;</span><br>
-                <h1 class="modal-sub-h">Jun 2021 - Sep 2021</h1>
-                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                <a href="https://www.instagram.com/p/CR6lPL6I3mx/" target="blank"><img class="img-exp" src="images/hypedocs-instagram.png" alt="Mahak's image on hypedocs page"></a>
-                <p class="projects-text"> Worked as a Software Developer Engineer for HypeDocs comapny.<span class="projects-highlight">Used React, React hooks and Javascript </span> to work on the <span class="projects-highlight">front-end and back-end of the HypeDocs.co software</span>. <br/><br/> 
-                  Implemented functionalities in the HypeDocs software like <span class="projects-highlight">pop-modals, csv importer, csv download and batch writes </span> to support the launch of <span class="projects-highlight">Public Page feature, which is now used by 70% of users (28% after first week)</span>
-                  Improved reliability by migrating the data of <span class="projects-highlight">300 customers </span> to Google Firebase and used netlify for the launch
-                </p>
-                
-                <button class="btn-projects modal-btn"> <a href="https://hypedocs.co/" class="modal-link" target="blank">WebApp </a></button>
-                <button class="btn-projects modal-btn"> <a href="https://www.instagram.com/hypedocsco/" target="blank" class="modal-link"><i class="fab fa-instagram insta-hype"></i>Instagram</a></button>
-
-               
-              </div>
-
-            </div>
-          </div>
+        <div class="col-lg-6 home-img-container home-cont-r">
+          <img
+            class="home-img img-fluid"
+            src="images/profile.JPG"
+            alt="Mahak's profile pic"
+          />
+          <!-- images/mahak-cropped.png -->
         </div>
+      </div>
+    </section>
 
-        <!-- exp 3 -->
-        <div class="col-lg-4 col-md-6 exp" id="exp-3">
-          <div class="experience-col exp-col-3">
-
-            <div class="experience-onimage">
-              <h1 class="experience-h">Instructor for LearnAI initiative by AI Commons<br />
-                <span class="card-sub-title">Dec 2020 - Present</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-3-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-
-            <div class="explore-project-container" id="exp-3-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">Web Developer for HypeDocs</h1>
-                <span class="close close-btn close-e3">&times;</span><br>
-                <h1 class="modal-sub-h">Dec 2020 - Present</h1>
-                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                <p class="projects-text">Taught machine learning concepts to <span class="projects-highlight">300+ students </span> from the countries of <span class="projects-highlight">East and West Africa </span> including
-                  Kenya, Ghana, Nigeria, Algeria, and Mexico under the LearnAI in Africa initiative. "LearnAI in Africa" is an introductory ML educational program with an aim to encourage affordable
-                  ‘AIforGood’ employment and is executed in collaboration with organizations like AI Commons, McGill University, Runmila AI Institute and University of Toronto.
-                  <br /><br /> <span class="projects-highlight">Led a team of 40 people </span> from University of Toronto's Artificial Intelligence group, working towards smooth execution of the program.
-                </p>
-                <button class="btn-projects modal-btn"> <a href="https://ai-commons.org/" target="blank" class="modal-link">Website</a></button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
+    <!-- ABOUT Section -->
+    <section class="about">
+      <a name="about-section-link"></a>
+      <div class="about-heading-container">
+        <span class="dot"></span>
+        <h1 class="about-heading">ABOUT</h1>
+        <span class="dot"></span>
       </div>
 
-      <!-- another row -->
-
-      <div class="row exp-row">
-        <div class="col-lg-4 col-md-6 exp" id="exp-4">
-          <div class="experience-col exp-col-4">
-
-            <div class="experince-onimage">
-              <h1 class="experience-h">Executive for UofT Hacks 2022 <br />
-                <span class="card-sub-title">Jun 2021 - Aug 2021</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-4-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-
-            <div class="explore-project-container" id="exp-4-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">Executive for UofT Hacks 2022</h1>
-                <span class="close close-btn close-e4">&times;</span> <br>
-                <h1 class="modal-sub-h">Jun 2021 - Aug 2021</h1>
-                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                <p class="projects-text"> I will be working as an <span class="projects-highlight">Executive for the Sponsorship team </span> of University of Toronto [UofT] Hacks hackathon 2022.
-
-                </p>
-                <button class="btn-projects modal-btn"><a target="blank" href="https://www.facebook.com/UoftHacks/" class="modal-link">Website</a></button>
-              </div>
-
-            </div>
-          </div>
-
+      <div class="row">
+        <div class="col-lg-6 about-l">
+          <img
+            class="about-img"
+            src="images/mahak-img.png"
+            alt="Mahak's picture"
+          />
         </div>
-
-
-        <div class="col-lg-4 col-md-6 exp" id="exp-5">
-          <div class="experience-col exp-col-5">
-
-            <div class="experince-onimage">
-              <h1 class="experience-h">General Executive for UofT Artificial Intelligence Club <br />
-                <span class="card-sub-title">Jan 2020 - Present</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-5-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-
-            <div class="explore-project-container" id="exp-5-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">General Executive for UofT AI</h1>
-                <span class="close close-btn close-e5">&times;</span><br>
-                <h1 class="modal-sub-h">Jan 2020 - Present</h1>
-                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                <p class="projects-text"> <span class="projects-highlight">Led a team of 20 students</span> responsible for UofT AI’s marketing and promotion operations for
-                  the annual <span class="projects-highlight">StartAI conference with almost 2,000 participants</span>. <br /> <br />
-                  Contributed to the organization of an international machine learning competition with over 100 students from teams from
-                  the <span class="projects-highlight">top 25 universities in North America </span> (Stanford, MIT, Carnegie Mellon, UC Berkeley, etc.) with a budget of <span class="projects-highlight">$100,000 and partnerships with Google AI, IBM,
-                    DeepMind, AccuWeather, Vector Institute, etc</span>.
-
-                </p>
-                <button class="btn-projects modal-btn"> <a target="blank" href="https://www.uoft.ai/" class="modal-link">Website</a></button>
-              </div>
-
-            </div>
-          </div>
-
+        <div class="col-lg-6 about-r">
+          <p class="about-r-text">
+            Hello there! Thank you for viewing my website. I am a Computer
+            Science Specialist student at University of Toronto with a passion
+            for innovation. I enjoy working on software development and machine
+            learning projects.
+          </p>
+          <p class="about-r-text">
+            I love working in a team and enjoy participating in hackathons and
+            coding challenges. I am passionate about learning and communicating,
+            and love to get my hands on new projects and ideas.
+          </p>
+          <p class="about-r-text">
+            Fun fact: I have played Tennis professionally for until the age of
+            18 and now play for UofT Varsity tennis team.
+          </p>
         </div>
+      </div>
+    </section>
 
-
-        <div class="col-lg-4 col-md-6 exp" id="exp-6">
-          <div class="experience-col exp-col-6">
-
-            <div class="experince-onimage">
-              <h1 class="experience-h">Project Developer for UTMIST<br />
-                <span class="card-sub-title">Sep 2020 - Mar 2021</span>
-              </h1>
-              <button class="btn-projects exp-btn" id="exp-6-btn" type="button" name="explore-experince">Work Info</button>
-            </div>
-
-            <div class="explore-project-container" id="exp-6-modal">
-              <div class="explore-project-content">
-                <h1 class="modal-h">Project Developer for UTMIST</h1>
-                <span class="close close-btn close-e6">&times;</span><br>
-                <h1 class="modal-sub-h">Sep 2020 - Mar 2021</h1>
-                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                <p class="projects-text"> Undertaken planning and execution of a <span class="projects-highlight">Machine learning project</span> in a team of 6 students, with the aim to create a model capable to transferring the style of a piece of music as part of <span class="projects-highlight">Academic Research projects 2020-21 </span> cohort of University of
-                  Toronto Machine
-                  Intelligence Student Team [ UTMIST ]. <br /><br /> This project was made using tensorflow libraries like librosa, CNN's and was inspired by the process of style transfer of images/paintings.
-                </p>
-                <button class="btn-projects modal-btn"><a target="blank" href="https://utmist.gitlab.io/" class="modal-link">Website</a></button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
+    <!-- EXPERIENCE section -->
+    <section class="experience">
+      <a name="experience-section-link"></a>
+      <div class="experience-heading-container">
+        <span class="dot"></span>
+        <h1 class="projects-heading-main">EXPERIENCE</h1>
+        <span class="dot"></span>
       </div>
 
-      <!-- row 2 finish -->
-
-      <button type="button" class="btn btn-dark show-more-btn" id="exp-show-more-btn">Show More</button>
-
-      <!-- section under show more btn start -->
-      <section class="exp-show-more-container" id="experience-showMore-cont">
+      <section class="experience-inside">
         <div class="row exp-row">
-          <div class="col-lg-4 col-md-6 exp" id="exp-7">
-            <div class="experience-col exp-col-7">
-
+          <div class="col-lg-4 col-md-6 exp" id="exp-1">
+            <div class="experience-col exp-col-1">
               <div class="experince-onimage">
-                <h1 class="experience-h">Peer Leader for New College Orientation prrgrams<br />
-                  <span class="card-sub-title">Jun 2020 - Present</span>
+                <h1 class="experience-h">
+                  Research Assistant at MEDCVR lab<br />
+                  <span class="card-sub-title">May 2021 - Aug 2021</span>
                 </h1>
-                <button class="btn-projects exp-btn" id="exp-7-btn" type="button" name="explore-experince">Work Info</button>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-1-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
+              </div>
+              <div class="explore-project-container" id="exp-1-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">Research Assistant at MEDCVR lab</h1>
+                  <span class="close close-btn close-e1">&times;</span><br />
+                  <h1 class="modal-sub-h">May 2021 - Aug 2021</h1>
+                  <p class="projects-text">
+                    Designed a machine learning model capable of performing
+                    automatic lesion boundary detection using dermoscopy images.
+                    Devised deep learning models in
+                    <span class="projects-highlight">PyTorch (Python) </span>
+                    using architectures like
+                    <span class="projects-highlight"
+                      >UNet, Attention Net, Pool Nets and Att-UNets
+                    </span>
+                    and tested them on the collected dataset to find the best
+                    architecture for the project
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      href="https://www.cs.toronto.edu/~lakahrs/"
+                      class="modal-link"
+                      target="blank"
+                      >Website
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- exp 2 -->
+
+          <div class="col-lg-4 col-md-6 exp" id="exp-2">
+            <div class="experience-col exp-col-2">
+              <div class="experince-onimage">
+                <h1 class="experience-h">
+                  Full-Stack Web Developer for HypeDocs<br />
+                  <span class="card-sub-title">Jun 2021 - Sep 2021</span>
+                </h1>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-2-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
               </div>
 
-              <div class="explore-project-container" id="exp-7-modal">
+              <div class="explore-project-container" id="exp-2-modal">
                 <div class="explore-project-content">
-                  <h1 class="modal-h">Peer Leader for New College</h1>
-                  <span class="close close-btn close-e7">&times;</span> <br>
-                  <h1 class="modal-sub-h">Jun 2020 - Present</h1>
+                  <h1 class="modal-h">Full-Stack Web Developer for HypeDocs</h1>
+                  <span class="close close-btn close-e2">&times;</span><br />
+                  <h1 class="modal-sub-h">Jun 2021 - Sep 2021</h1>
                   <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-                  <p class="projects-text"> I worked as a peer leader for New College Orientation progarms that run throughout the academic year. New College orientation includes programs like <span class="projects-highlight">E-mentorship, IGNITE,
-                      SPROUT and New1X.</span> <br /> I was a participant of New College orientation in my first year and
-                    that it was immensely useful for me as it helped me transition smoothly to university life and also helped me make friends and get comfortable with the canadian culture. Thus, I decided to give back to the college
-                    <span class="projects-highlight">volunteering as a Peer Leader for academic session 2020-21 and 2021-22 </span>. As a Peer Leader, I get to organize events with <span class="projects-highlight">100+ participants, answer incoming
-                      student's questions about university life and academic, and be a mentor for a group of 15 incoming students </span>.
+                  <a
+                    href="https://www.instagram.com/p/CR6lPL6I3mx/"
+                    target="blank"
+                    ><img
+                      class="img-exp"
+                      src="images/hypedocs-instagram.png"
+                      alt="Mahak's image on hypedocs page"
+                  /></a>
+                  <p class="projects-text">
+                    Worked as a Software Developer Engineer for HypeDocs
+                    comapny.<span class="projects-highlight"
+                      >Used React, React hooks and Javascript
+                    </span>
+                    to work on the
+                    <span class="projects-highlight"
+                      >front-end and back-end of the HypeDocs.co software</span
+                    >. <br /><br />
+                    Implemented functionalities in the HypeDocs software like
+                    <span class="projects-highlight"
+                      >pop-modals, csv importer, csv download and batch writes
+                    </span>
+                    to support the launch of
+                    <span class="projects-highlight"
+                      >Public Page feature, which is now used by 70% of users
+                      (28% after first week)</span
+                    >
+                    Improved reliability by migrating the data of
+                    <span class="projects-highlight">300 customers </span> to
+                    Google Firebase and used netlify for the launch
                   </p>
-                  <button class="btn-projects modal-btn"><a target="blank" href="http://studentguides.newcollege.utoronto.ca/student-life/new-roots-new-college-orientation/" class="modal-link">Website</a></button>
+
+                  <button class="btn-projects modal-btn">
+                    <a
+                      href="https://hypedocs.co/"
+                      class="modal-link"
+                      target="blank"
+                      >WebApp
+                    </a>
+                  </button>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      href="https://www.instagram.com/hypedocsco/"
+                      target="blank"
+                      class="modal-link"
+                      ><i class="fab fa-instagram insta-hype"></i>Instagram</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- exp 3 -->
+          <div class="col-lg-4 col-md-6 exp" id="exp-3">
+            <div class="experience-col exp-col-3">
+              <div class="experience-onimage">
+                <h1 class="experience-h">
+                  Instructor for LearnAI initiative by AI Commons<br />
+                  <span class="card-sub-title">Dec 2020 - Present</span>
+                </h1>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-3-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
+              </div>
+
+              <div class="explore-project-container" id="exp-3-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">Web Developer for HypeDocs</h1>
+                  <span class="close close-btn close-e3">&times;</span><br />
+                  <h1 class="modal-sub-h">Dec 2020 - Present</h1>
+                  <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+                  <p class="projects-text">
+                    Taught machine learning concepts to
+                    <span class="projects-highlight">300+ students </span> from
+                    the countries of
+                    <span class="projects-highlight"
+                      >East and West Africa
+                    </span>
+                    including Kenya, Ghana, Nigeria, Algeria, and Mexico under
+                    the LearnAI in Africa initiative. "LearnAI in Africa" is an
+                    introductory ML educational program with an aim to encourage
+                    affordable ‘AIforGood’ employment and is executed in
+                    collaboration with organizations like AI Commons, McGill
+                    University, Runmila AI Institute and University of Toronto.
+                    <br /><br />
+                    <span class="projects-highlight"
+                      >Led a team of 40 people
+                    </span>
+                    from University of Toronto's Artificial Intelligence group,
+                    working towards smooth execution of the program.
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      href="https://ai-commons.org/"
+                      target="blank"
+                      class="modal-link"
+                      >Website</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- another row -->
+
+        <div class="row exp-row">
+          <div class="col-lg-4 col-md-6 exp" id="exp-4">
+            <div class="experience-col exp-col-4">
+              <div class="experince-onimage">
+                <h1 class="experience-h">
+                  Executive for UofT Hacks 2022 <br />
+                  <span class="card-sub-title">Jun 2021 - Aug 2021</span>
+                </h1>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-4-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
+              </div>
+
+              <div class="explore-project-container" id="exp-4-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">Executive for UofT Hacks 2022</h1>
+                  <span class="close close-btn close-e4">&times;</span> <br />
+                  <h1 class="modal-sub-h">Jun 2021 - Aug 2021</h1>
+                  <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+                  <p class="projects-text">
+                    I will be working as an
+                    <span class="projects-highlight"
+                      >Executive for the Sponsorship team
+                    </span>
+                    of University of Toronto [UofT] Hacks hackathon 2022.
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      target="blank"
+                      href="https://www.facebook.com/UoftHacks/"
+                      class="modal-link"
+                      >Website</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 exp" id="exp-5">
+            <div class="experience-col exp-col-5">
+              <div class="experince-onimage">
+                <h1 class="experience-h">
+                  General Executive for UofT Artificial Intelligence Club <br />
+                  <span class="card-sub-title">Jan 2020 - Present</span>
+                </h1>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-5-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
+              </div>
+
+              <div class="explore-project-container" id="exp-5-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">General Executive for UofT AI</h1>
+                  <span class="close close-btn close-e5">&times;</span><br />
+                  <h1 class="modal-sub-h">Jan 2020 - Present</h1>
+                  <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+                  <p class="projects-text">
+                    <span class="projects-highlight"
+                      >Led a team of 20 students</span
+                    >
+                    responsible for UofT AI’s marketing and promotion operations
+                    for the annual
+                    <span class="projects-highlight"
+                      >StartAI conference with almost 2,000 participants</span
+                    >. <br />
+                    <br />
+                    Contributed to the organization of an international machine
+                    learning competition with over 100 students from teams from
+                    the
+                    <span class="projects-highlight"
+                      >top 25 universities in North America
+                    </span>
+                    (Stanford, MIT, Carnegie Mellon, UC Berkeley, etc.) with a
+                    budget of
+                    <span class="projects-highlight"
+                      >$100,000 and partnerships with Google AI, IBM, DeepMind,
+                      AccuWeather, Vector Institute, etc</span
+                    >.
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      target="blank"
+                      href="https://www.uoft.ai/"
+                      class="modal-link"
+                      >Website</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 exp" id="exp-6">
+            <div class="experience-col exp-col-6">
+              <div class="experince-onimage">
+                <h1 class="experience-h">
+                  Project Developer for UTMIST<br />
+                  <span class="card-sub-title">Sep 2020 - Mar 2021</span>
+                </h1>
+                <button
+                  class="btn-projects exp-btn"
+                  id="exp-6-btn"
+                  type="button"
+                  name="explore-experince"
+                >
+                  Work Info
+                </button>
+              </div>
+
+              <div class="explore-project-container" id="exp-6-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">Project Developer for UTMIST</h1>
+                  <span class="close close-btn close-e6">&times;</span><br />
+                  <h1 class="modal-sub-h">Sep 2020 - Mar 2021</h1>
+                  <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+                  <p class="projects-text">
+                    Undertaken planning and execution of a
+                    <span class="projects-highlight"
+                      >Machine learning project</span
+                    >
+                    in a team of 6 students, with the aim to create a model
+                    capable to transferring the style of a piece of music as
+                    part of
+                    <span class="projects-highlight"
+                      >Academic Research projects 2020-21
+                    </span>
+                    cohort of University of Toronto Machine Intelligence Student
+                    Team [ UTMIST ]. <br /><br />
+                    This project was made using tensorflow libraries like
+                    librosa, CNN's and was inspired by the process of style
+                    transfer of images/paintings.
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      target="blank"
+                      href="https://utmist.gitlab.io/"
+                      class="modal-link"
+                      >Website</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 finish -->
+
+        <button
+          type="button"
+          class="btn btn-dark show-more-btn"
+          id="exp-show-more-btn"
+        >
+          Show More
+        </button>
+
+        <!-- section under show more btn start -->
+        <section class="exp-show-more-container" id="experience-showMore-cont">
+          <div class="row exp-row">
+            <div class="col-lg-4 col-md-6 exp" id="exp-7">
+              <div class="experience-col exp-col-7">
+                <div class="experince-onimage">
+                  <h1 class="experience-h">
+                    Peer Leader for New College Orientation prrgrams<br />
+                    <span class="card-sub-title">Jun 2020 - Present</span>
+                  </h1>
+                  <button
+                    class="btn-projects exp-btn"
+                    id="exp-7-btn"
+                    type="button"
+                    name="explore-experince"
+                  >
+                    Work Info
+                  </button>
                 </div>
 
+                <div class="explore-project-container" id="exp-7-modal">
+                  <div class="explore-project-content">
+                    <h1 class="modal-h">Peer Leader for New College</h1>
+                    <span class="close close-btn close-e7">&times;</span> <br />
+                    <h1 class="modal-sub-h">Jun 2020 - Present</h1>
+                    <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+                    <p class="projects-text">
+                      I worked as a peer leader for New College Orientation
+                      progarms that run throughout the academic year. New
+                      College orientation includes programs like
+                      <span class="projects-highlight"
+                        >E-mentorship, IGNITE, SPROUT and New1X.</span
+                      >
+                      <br />
+                      I was a participant of New College orientation in my first
+                      year and that it was immensely useful for me as it helped
+                      me transition smoothly to university life and also helped
+                      me make friends and get comfortable with the canadian
+                      culture. Thus, I decided to give back to the college
+                      <span class="projects-highlight"
+                        >volunteering as a Peer Leader for academic session
+                        2020-21 and 2021-22 </span
+                      >. As a Peer Leader, I get to organize events with
+                      <span class="projects-highlight"
+                        >100+ participants, answer incoming student's questions
+                        about university life and academic, and be a mentor for
+                        a group of 15 incoming students </span
+                      >.
+                    </p>
+                    <button class="btn-projects modal-btn">
+                      <a
+                        target="blank"
+                        href="http://studentguides.newcollege.utoronto.ca/student-life/new-roots-new-college-orientation/"
+                        class="modal-link"
+                        >Website</a
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
+            <!-- row end here -->
           </div>
+          <!-- row end div -->
 
-
-
-          <!-- row end here -->
-        </div> <!-- row end div -->
-
-        <button type="button" class="btn btn-dark show-less-btn" id="exp-show-less-btn">Show Less</button>
-
+          <button
+            type="button"
+            class="btn btn-dark show-less-btn"
+            id="exp-show-less-btn"
+          >
+            Show Less
+          </button>
+        </section>
       </section>
-
-
     </section>
-  </section>
 
-  <!-- PROJECTS section -->
+    <!-- PROJECTS section -->
 
-  <section class="projects">
-    <a name="projects-section-link"></a>
-    <div class="projects-heading-container">
-      <span class="dot"></span>
-      <h1 class="projects-heading-main"> PROJECTS</h1>
-      <span class="dot"></span>
-
-    </div>
-
-    <div class="row project-row">
-      <div class="col-lg-4 col-md-6 project-col-in">
-
-        <!-- Project #1 -->
-
-        <div class="project-col-1 project-col">
-          <h1 class="projects-h">Advanced Conference Managament System</h1>
-          <p class="project-icon"><i class="fab fa-java"></i></p>
-          <button class="btn-projects projects-btn" id="project-1-btn" type="button" name="explore-project">Explore project</button>
-
-          <div class="explore-project-container" id="project-1-modal">
-            <div class="explore-project-content">
-              <h1 class="modal-h">Advanced Conference Managament System</h1>
-              <span class="close close-btn close-p1">&times;</span>
-              <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-
-              <div class="video">
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/r-BNCeLyeM8">
-                </iframe>
-              </div>
-
-
-              <p class="projects-text">This was the Final project for CSC207: Software Design course. In order to complete this project, I worked in a team of <span class="projects-highlight">7 developers</span> over the period of <span
-                  class="projects-highlight">2 months.</span> <br> <br /> This is a <span class="projects-highlight">software</span> which can be used to schedule and manage participants for conferences. This projects is made using <span
-                  class="projects-highlight">Java</span> and has a complete GUI, made using Java Swing. This project is made following the principles of software design including <span class="projects-highlight">clean archietecture and SOLID.</span>
-              </p>
-              <button class="btn-projects modal-btn"><a target="blank" href="https://github.com/mahak999/CSC207-Final-Project" class="modal-link"><i class="fab fa-github"></i> GitHub</a></button>
-            </div>
-
-          </div>
-        </div>
-
+    <section class="projects">
+      <a name="projects-section-link"></a>
+      <div class="projects-heading-container">
+        <span class="dot"></span>
+        <h1 class="projects-heading-main">PROJECTS</h1>
+        <span class="dot"></span>
       </div>
 
-
-      <div class="col-lg-4 col-md-6 project-col-in">
-        <div class="project-col-2 project-col">
-          <h1 class="projects-h">Musical Style Transfer with CNNs</h1>
-          <p class="project-icon"><i class="fab fa-python"></i></p>
-          <button class="btn-projects projects-btn" id="project-2-btn" type="button" name="explore-project">Explore project</button>
-
-          <div class="explore-project-container" id="project-2-modal">
-            <div class="explore-project-content">
-              <h1 class="modal-h">Musical Style Transfer with CNNs</h1>
-              <span class="close close-btn close-p2">&times;</span>
-              <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-
-              <div class="video" id="video-utmist">
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/QuGuQ8-Y2qg">
-                </iframe>
-              </div>
-
-
-              <p class="projects-text"> Research project made in a team of <span class="projects-highlight"> 5 students for <a href="https://utmist.gitlab.io/" class="projects-in-text-link" target="blank">UTMIST</a> </span> Academic track 2020-21
-                cohort
-                projects. <br /> Made a model capable of transferring the style of a piece of music while preserving
-                its content using <span class="projects-highlight">tensorflow’s Librosa library, CNNs and spectrograms</span></p>
-
-              <button class="btn-projects modal-btn"><a target="blank" href="https://github.com/mahak999/NSTcnn" class="modal-link"> <i class="fab fa-github"></i> GitHub</a></button>
-              <button class="btn-projects modal-btn"><a target="blank" href="https://nst-cnn.herokuapp.com/" class="modal-link">Website</a></button>
-              <button class="btn-projects modal-btn"><a target="blank" href="https://drive.google.com/file/d/1htQZlUdhFg7b3LlhrbG883QEXwgvKshj/view" class="modal-link"> Project Report</a></button>
-              <button class="btn-projects modal-btn"><a target="blank" href="https://utmist.gitlab.io/projects/musical-style-neural-transfer/" class="modal-link"> Project Feature on UTMIST</a></button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-4 col-md-6 project-col-in">
-        <div class="project-col-3 project-col">
-          <h1 class="projects-h">Doodle Jump Game using MIPS Assembly</h1>
-          <button class="btn-projects projects-btn" id="project-3-btn" type="button" name="explore-project">Explore project</button>
-
-          <div class="explore-project-container" id="project-3-modal">
-            <div class="explore-project-content">
-              <h1 class="modal-h">Doodle Jump Game using MIPS Assembly</h1>
-              <span class="close close-btn close-p3">&times;</span>
-              <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
-
-              <p class="projects-text"> This was the Final project for CSC258: Computer Organization course where I recreated the Doodle jump game using low level Assembly programming language. <br /><br>
-                This game includes <span class="projects-highlight">Fancier Graphics, Dynamic on-screen notifications, Scoreboard and interactive Lethal creatures/opponents. </span></p>
-              <button class="btn-projects modal-btn"><a target="blank" href="https://github.com/mahak999/Assembly_Doodle_Jump_Game" class="modal-link"> <i class="fab fa-github"></i> GitHub</a></button>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div> <!-- first row finish here -->
-
-    <button type="button" class="btn btn-secondary show-more-btn" id="projects-show-more-btn">Show More</button>
-
-
-    <div class="projects-show-more-section" id="projects-showMore-cont">
       <div class="row project-row">
         <div class="col-lg-4 col-md-6 project-col-in">
-          <div class="project-col-4 project-col">
+          <!-- Project #1 -->
 
+          <div class="project-col-1 project-col">
+            <h1 class="projects-h">Advanced Conference Managament System</h1>
+            <p class="project-icon"><i class="fab fa-java"></i></p>
+            <button
+              class="btn-projects projects-btn"
+              id="project-1-btn"
+              type="button"
+              name="explore-project"
+            >
+              Explore project
+            </button>
 
-            <h1 class="projects-h">Flappy Bird AI</h1>
-            <p class="project-icon" style="top: 60%"><i class="fab fa-python"></i></p>
-            <button class="btn-projects projects-btn" id="project-4-btn" type="button" name="explore-project">Explore project</button>
-
-            <div class="explore-project-container" id="project-4-modal">
+            <div class="explore-project-container" id="project-1-modal">
               <div class="explore-project-content">
-                <h1 class="modal-h">Flappy Bird AI</h1>
-                <span class="close close-btn close-p4">&times;</span>
+                <h1 class="modal-h">Advanced Conference Managament System</h1>
+                <span class="close close-btn close-p1">&times;</span>
                 <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
 
-                <p class="projects-text">Using <span class="projects-highlight"> <a href="https://neat-python.readthedocs.io/en/latest/" class="projects-in-text-link" target="blank">NEAT Python </a> </span> to learn to play Flappy Bird game. This
-                  code
-                  uses search and optimise technique called <span class="projects-highlight">genetic algorithm</span>, which creates a particular number of random configurations and the best of them is used to create the next generation of neural
-                  networks. As we repeat the process, we observe that the performance improves.</p>
-                <button class="btn-projects modal-btn"><a target="blank" href="https://github.com/mahak999/Assembly_Doodle_Jump_Game" class="modal-link"><i class="fab fa-github"></i> GitHub</a> </button>
+                <div class="video">
+                  <iframe
+                    width="300"
+                    height="250"
+                    src="https://www.youtube.com/embed/r-BNCeLyeM8"
+                  >
+                  </iframe>
+                </div>
 
+                <p class="projects-text">
+                  This was the Final project for CSC207: Software Design course.
+                  In order to complete this project, I worked in a team of
+                  <span class="projects-highlight">7 developers</span> over the
+                  period of <span class="projects-highlight">2 months.</span>
+                  <br />
+                  <br />
+                  This is a
+                  <span class="projects-highlight">software</span> which can be
+                  used to schedule and manage participants for conferences. This
+                  projects is made using
+                  <span class="projects-highlight">Java</span> and has a
+                  complete GUI, made using Java Swing. This project is made
+                  following the principles of software design including
+                  <span class="projects-highlight"
+                    >clean archietecture and SOLID.</span
+                  >
+                </p>
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://github.com/mahak999/CSC207-Final-Project"
+                    class="modal-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-col-in">
+          <div class="project-col-2 project-col">
+            <h1 class="projects-h">Musical Style Transfer with CNNs</h1>
+            <p class="project-icon"><i class="fab fa-python"></i></p>
+            <button
+              class="btn-projects projects-btn"
+              id="project-2-btn"
+              type="button"
+              name="explore-project"
+            >
+              Explore project
+            </button>
+
+            <div class="explore-project-container" id="project-2-modal">
+              <div class="explore-project-content">
+                <h1 class="modal-h">Musical Style Transfer with CNNs</h1>
+                <span class="close close-btn close-p2">&times;</span>
+                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+
+                <div class="video" id="video-utmist">
+                  <iframe
+                    width="300"
+                    height="250"
+                    src="https://www.youtube.com/embed/QuGuQ8-Y2qg"
+                  >
+                  </iframe>
+                </div>
+
+                <p class="projects-text">
+                  Research project made in a team of
+                  <span class="projects-highlight">
+                    5 students for
+                    <a
+                      href="https://utmist.gitlab.io/"
+                      class="projects-in-text-link"
+                      target="blank"
+                      >UTMIST</a
+                    >
+                  </span>
+                  Academic track 2020-21 cohort projects. <br />
+                  Made a model capable of transferring the style of a piece of
+                  music while preserving its content using
+                  <span class="projects-highlight"
+                    >tensorflow’s Librosa library, CNNs and spectrograms</span
+                  >
+                </p>
+
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://github.com/mahak999/NSTcnn"
+                    class="modal-link"
+                  >
+                    <i class="fab fa-github"></i> GitHub</a
+                  >
+                </button>
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://nst-cnn.herokuapp.com/"
+                    class="modal-link"
+                    >Website</a
+                  >
+                </button>
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://drive.google.com/file/d/1htQZlUdhFg7b3LlhrbG883QEXwgvKshj/view"
+                    class="modal-link"
+                  >
+                    Project Report</a
+                  >
+                </button>
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://utmist.gitlab.io/projects/musical-style-neural-transfer/"
+                    class="modal-link"
+                  >
+                    Project Feature on UTMIST</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-col-in">
+          <div class="project-col-3 project-col">
+            <h1 class="projects-h">Doodle Jump Game using MIPS Assembly</h1>
+            <button
+              class="btn-projects projects-btn"
+              id="project-3-btn"
+              type="button"
+              name="explore-project"
+            >
+              Explore project
+            </button>
+
+            <div class="explore-project-container" id="project-3-modal">
+              <div class="explore-project-content">
+                <h1 class="modal-h">Doodle Jump Game using MIPS Assembly</h1>
+                <span class="close close-btn close-p3">&times;</span>
+                <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+
+                <p class="projects-text">
+                  This was the Final project for CSC258: Computer Organization
+                  course where I recreated the Doodle jump game using low level
+                  Assembly programming language. <br /><br />
+                  This game includes
+                  <span class="projects-highlight"
+                    >Fancier Graphics, Dynamic on-screen notifications,
+                    Scoreboard and interactive Lethal creatures/opponents.
+                  </span>
+                </p>
+                <button class="btn-projects modal-btn">
+                  <a
+                    target="blank"
+                    href="https://github.com/mahak999/Assembly_Doodle_Jump_Game"
+                    class="modal-link"
+                  >
+                    <i class="fab fa-github"></i> GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- first row finish here -->
+
+      <button
+        type="button"
+        class="btn btn-secondary show-more-btn"
+        id="projects-show-more-btn"
+      >
+        Show More
+      </button>
+
+      <div class="projects-show-more-section" id="projects-showMore-cont">
+        <div class="row project-row">
+          <div class="col-lg-4 col-md-6 project-col-in">
+            <div class="project-col-4 project-col">
+              <h1 class="projects-h">Flappy Bird AI</h1>
+              <p class="project-icon" style="top: 60%">
+                <i class="fab fa-python"></i>
+              </p>
+              <button
+                class="btn-projects projects-btn"
+                id="project-4-btn"
+                type="button"
+                name="explore-project"
+              >
+                Explore project
+              </button>
+
+              <div class="explore-project-container" id="project-4-modal">
+                <div class="explore-project-content">
+                  <h1 class="modal-h">Flappy Bird AI</h1>
+                  <span class="close close-btn close-p4">&times;</span>
+                  <!-- <button type="button" class="btn-close close-p1" aria-label="Close"></button> -->
+
+                  <p class="projects-text">
+                    Using
+                    <span class="projects-highlight">
+                      <a
+                        href="https://neat-python.readthedocs.io/en/latest/"
+                        class="projects-in-text-link"
+                        target="blank"
+                        >NEAT Python
+                      </a>
+                    </span>
+                    to learn to play Flappy Bird game. This code uses search and
+                    optimise technique called
+                    <span class="projects-highlight">genetic algorithm</span>,
+                    which creates a particular number of random configurations
+                    and the best of them is used to create the next generation
+                    of neural networks. As we repeat the process, we observe
+                    that the performance improves.
+                  </p>
+                  <button class="btn-projects modal-btn">
+                    <a
+                      target="blank"
+                      href="https://github.com/mahak999/Assembly_Doodle_Jump_Game"
+                      class="modal-link"
+                      ><i class="fab fa-github"></i> GitHub</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-secondary show-less-btn"
+          id="projects-show-less-btn"
+        >
+          Show Less
+        </button>
+      </div>
+    </section>
+
+    <!-- AWARDS section -->
+    <section class="awards">
+      <a name="awards-section-link"></a>
+      <div class="projects-heading-container awards-heading-container">
+        <span class="dot"></span>
+        <h1 class="awards-heading">AWARDS & SCHOLARSHIPS</h1>
+        <span class="dot"></span>
+      </div>
+
+      <div class="awards-container">
+        <!-- row 1 -->
+        <div class="row awards-row">
+          <div class="col-lg-4 col-md-6 awards-col">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/uoft-logo.png"
+                  class="card-image awards-pic"
+                  alt="UofT logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  Awarded Dean’s Honors Scholar<br />
+                  <span class="card-sub-title">Jun, 2021 | Aug, 2020</span>
+                </h5>
+
+                <p class="card-text">
+                  In recognition of my academic excellence as a U of T student,
+                  I was named a Dean’s List Scholar in the Faculty of Arts &
+                  Science for the 2020-21 and 2019-20 fall /winter academic
+                  year.
+                </p>
               </div>
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 awards-col">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/uoft-logo.png"
+                  class="card-image awards-pic"
+                  alt="UofT logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  University of Toronto International Scholarship Recepient<br />
+                  <span class="card-sub-title">Aug, 2019</span>
+                </h5>
+                <p class="card-text">
+                  Awarded to the University’s most outstanding International
+                  secondary school students on admission.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 awards-col">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/uoft-logo.png"
+                  class="card-image awards-pic"
+                  alt="MEDCVR lab logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  University of Toronto Scholars Award<br />
+                  <span class="card-sub-title">Aug, 2019</span>
+                </h5>
+                <p class="card-text">
+                  Awarded to the University’s most outstanding secondary school
+                  students on admission.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 of awards -->
+
+        <div class="row awards-row">
+          <div class="col-lg-4 col-md-6 awards-col-l">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/waterloo.png"
+                  class="card-image awards-pic"
+                  alt="university of waterloo logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  Selected among Top 25% students for Euclid Competition<br />
+                  <span class="card-sub-title">Apr, 2019</span>
+                </h5>
+                <p class="card-text">
+                  Awarded by University of Waterloo, Canada for being among top
+                  25% students in Euclid Competition.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 awards-col-m">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/cbse.png"
+                  class="card-image awards-pic"
+                  alt="UofT logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  Selected among Top 0.1% students from India in Mathematics<br />
+                  <span class="card-sub-title">Dec, 2018</span>
+                </h5>
+                <p class="card-text">
+                  Selected among top 0.1% of students from India in Mathematics
+                  by CBSE on the basis of CBSE board's 12th standard Mathematics
+                  exam, in which I got a perfect score of 100.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 awards-col-r">
+            <div class="card">
+              <div class="card-picture awards-pic-cont">
+                <img
+                  src="images/state-sports.png"
+                  class="card-image awards-pic"
+                  alt="university of waterloo logo"
+                />
+              </div>
+
+              <div class="card-body awards-text">
+                <h5 class="card-title">
+                  Best Tennis Player Award<br />
+                  <span class="card-sub-title">Sep, 2017</span>
+                </h5>
+
+                <p class="card-text">
+                  Recepient of the prestigious Best Tennis Player Award by
+                  Rajasthan’s State Sports Department (Women’s category).
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button type="button" class="btn btn-secondary show-less-btn" id="projects-show-less-btn">Show Less</button>
-    </div>
 
-  </section>
-
-
-
-  <!-- AWARDS section -->
-  <section class="awards">
-    <a name="awards-section-link"></a>
-    <div class="projects-heading-container awards-heading-container">
-      <span class="dot"></span>
-      <h1 class="awards-heading">AWARDS & SCHOLARSHIPS</h1>
-      <span class="dot"></span>
-    </div>
-
-
-    <div class="awards-container">
-
-      <!-- row 1 -->
-      <div class="row awards-row">
-        <div class="col-lg-4 col-md-6 awards-col">
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/uoft-logo.png" class="card-image awards-pic" alt="UofT logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">Awarded Dean’s Honors Scholar<br />
-                <span class="card-sub-title">Jun, 2021 | Aug, 2020</span>
-              </h5>
-
-              <p class="card-text">In recognition of my academic excellence as a U of T student, I was named a Dean’s List Scholar in the Faculty of Arts & Science for the 2020-21 and 2019-20 fall /winter academic year.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 awards-col">
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/uoft-logo.png" class="card-image awards-pic" alt="UofT logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">University of Toronto International Scholarship Recepient<br />
-                <span class="card-sub-title">Aug, 2019</span>
-              </h5>
-              <p class="card-text">Awarded to the University’s most outstanding International secondary school students on admission.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 awards-col">
-
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/uoft-logo.png" class="card-image awards-pic" alt="MEDCVR lab logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">University of Toronto Scholars Award<br />
-                <span class="card-sub-title">Aug, 2019</span>
-              </h5>
-              <p class="card-text">Awarded to the University’s most outstanding secondary school students on admission.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-
-
-      <!-- row 2 of awards -->
-
-
-      <div class="row awards-row">
-
-        <div class="col-lg-4 col-md-6 awards-col-l">
-
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/waterloo.png" class="card-image awards-pic" alt="university of waterloo logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">Selected among Top 25% students for Euclid Competition<br />
-                <span class="card-sub-title">Apr, 2019</span>
-              </h5>
-              <p class="card-text">Awarded by University of Waterloo, Canada for being among top 25% students in Euclid Competition.</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6 awards-col-m">
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/cbse.png" class="card-image awards-pic" alt="UofT logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">Selected among Top 0.1% students from India in Mathematics<br />
-                <span class="card-sub-title">Dec, 2018</span>
-              </h5>
-              <p class="card-text">Selected among top 0.1% of students from India in Mathematics by CBSE on the basis of CBSE board's 12th standard Mathematics exam, in which I got a perfect score of 100.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 awards-col-r">
-          <div class="card">
-            <div class="card-picture awards-pic-cont">
-              <img src="images/state-sports.png" class="card-image awards-pic" alt="university of waterloo logo">
-            </div>
-
-            <div class="card-body awards-text">
-              <h5 class="card-title">Best Tennis Player Award<br />
-                <span class="card-sub-title">Sep, 2017</span>
-              </h5>
-
-              <p class="card-text"> Recepient of the prestigious Best Tennis Player Award by Rajasthan’s State Sports Department (Women’s category).</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- <div class="awards-showMoreBtn-cont">
+      <!-- <div class="awards-showMoreBtn-cont">
       <button type="button" class="btn btn-dark show-more-btn" id="awards-show-more-btn">Show More</button>
     </div>
 
 
       <section class="awards-show-more-container" id="awards-showMore-cont">
 
-      <!-- awards row 3 -->
-    <!-- <div class="row awards-row">
+      awards row 3 -->
+      <!-- <div class="row awards-row">
 
 
         <div class="col-lg-4 col-md-6 awards-col-l">
@@ -731,43 +1208,60 @@
             <button type="button" class="btn btn-dark show-less-btn" id="awards-show-less-btn">Show Less</button>
       </div> -->
 
-    <!-- </section> -->
+      <!-- </section> -->
+    </section>
 
-    </div>
-  </section>
+    <!-- CONTACT section -->
 
+    <section class="contact">
+      <a name="contact-section-link"></a>
 
-  <!-- CONTACT section -->
+      <div class="row">
+        <div class="col-lg-6 contact-l">
+          <h1 class="contact-l-text">Get in Touch</h1>
+        </div>
 
-  <section class="contact">
-    <a name="contact-section-link"></a>
-
-    <div class="row">
-      <div class="col-lg-6 contact-l">
-        <h1 class="contact-l-text">Get in Touch</h1>
-      </div>
-
-      <div class="col-lg-6 contact-r">
-        <p>
-          <a class="contact-r-text" href="mailto:mahakkhurmi9@gmail.com">mahakkhurmi9@gmail.com </a> . <a class="contact-r-text" href="https://www.linkedin.com/in/mahak-khurmi999/" target="blank">LinkedIn</a> <br>
+        <div class="col-lg-6 contact-r">
+          <p>
+            <a class="contact-r-text" href="mailto:mahakkhurmi9@gmail.com"
+              >mahakkhurmi9@gmail.com
+            </a>
+            .
+            <a
+              class="contact-r-text"
+              href="https://www.linkedin.com/in/mahak-khurmi999/"
+              target="blank"
+              >LinkedIn</a
+            >
+            <br />
+          </p>
+          <p>
+            <a
+              class="contact-r-text"
+              href="https://github.com/mahak999"
+              target="blank"
+              >Github
+            </a>
+            .
+            <a
+              class="contact-r-text"
+              href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing"
+              target="blank"
+              >Resume</a
+            >
+            <br />
+          </p>
+        </div>
+        <p class="copyright">
+          Copyright <i class="far fa-copyright"></i> 2021 Mahak Khurmi
         </p>
-        <p>
-          <a class="contact-r-text" href="https://github.com/mahak999" target="blank">Github </a> . <a class="contact-r-text" href="https://drive.google.com/file/d/1qcC8KDYV0o6oPgM3vY5g8tae3BIbzBIJ/view?usp=sharing" target="blank">Resume</a> <br>
-        </p>
-
       </div>
-      <p class="copyright">Copyright <i class="far fa-copyright"></i> 2021 Mahak Khurmi</p>
+    </section>
 
-    </div>
-
-
-  </section>
-
-  <!-- Scripts -->
-  <script src="main.js"></script>
+    <!-- Scripts -->
+    <script src="main.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="jQuery-script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -315,7 +315,7 @@ body {
 
 .home-img {
   width: 70%;
-  filter: grayscale(20%);
+  /* filter: grayscale(20%); */
   margin: 1rem 0;
   border-radius: 3%;
   overflow: hidden;
