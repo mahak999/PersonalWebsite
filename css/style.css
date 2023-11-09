@@ -488,22 +488,28 @@ body {
 }
 /* new exp */
 .exp-col-1_1 {
-  background: url("../images/amazon-image.jpeg") no-repeat;
-  background-size: 200% 100%; /* This will effectively "zoom" into the image, showing only 50% of it */
-  background-position: center center; /* This will center the visible portion of the image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/amazon-image.jpeg");
+  background-size: cover;
 }
 
 .exp-col-1_2 {
-  background: url("../images/huawei-img.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/huawei-img.jpeg");
+  background-size: cover;
 }
 
 .exp-col-1_3 {
-  background: url("../images/harvard.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/harvard.jpeg");
+  background-size: cover;
 }
 
 /* exp-1 */
 .exp-col-1 {
-  background: url("../images/resize-medcvrExp.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/resize-medcvrExp.png");
+  background-size: cover;
 }
 
 .modal-link {
@@ -512,7 +518,9 @@ body {
 }
 
 .exp-col-2 {
-  background: url("../images/resize-hypeExp.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/resize-hypeExp.png");
+  background-size: cover;
 }
 .insta-hype {
   margin-right: 0.3em;
@@ -528,7 +536,9 @@ body {
 }
 
 .exp-col-3 {
-  background: url("../images/resize-ai-commons.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/resize-ai-commons.png");
+  background-size: cover;
 }
 
 .exp-col-4 {
@@ -605,12 +615,14 @@ body {
 }
 
 .awards-heading {
-  font-family: "Mate SC", serif;
-  color: #0c4271;
+  font-family: "Merriweather", serif;
+  color: black;
   text-align: center;
   font-size: 3rem;
   padding-bottom: 1.5rem;
   display: inline;
+  font-weight: bolder;
+  margin-bottom: 5rem;
 }
 
 .awards-text {
@@ -905,6 +917,7 @@ body {
     width: 30%;
     position: relative;
     left: 60%;
+    color: black;
   }
 
   .project-icon {
