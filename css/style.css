@@ -1,3 +1,11 @@
+/* Colours 
+orangish: FFC6AC
+yellow: FFF6DC
+green: C4C1A4
+grey: 9E9FA5
+
+*/
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +33,7 @@ body {
 .dot {
   height: 1rem;
   width: 1rem;
-  background-color: #125d98;
+  background-color: #fcf0ca;
   border-radius: 50%;
   display: inline-block;
   margin-right: 1rem;
@@ -100,6 +108,11 @@ body {
   width: 100%;
 }
 
+.card-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   width: 80%;
   border: 0px solid #6d6a75 !important;
@@ -303,7 +316,8 @@ body {
 /* HOME section */
 .home {
   margin: 3.9rem 2rem 7rem;
-  background-color: #848482;
+  /* background-color: #f9f3cc; */
+  background-color: #fcf0ca;
   padding: 3rem 3rem 14rem;
 }
 
@@ -374,7 +388,7 @@ body {
 }
 
 .major {
-  color: #d0d0d0;
+  color: #606263;
   font-family: "Montserrat", sans-serif;
   margin-top: 1%;
   font-size: 1.2rem;
@@ -418,6 +432,8 @@ body {
 .about-img {
   width: 60%;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  right: 15%;
 }
 
 .about-l {
@@ -429,17 +445,18 @@ body {
 }
 
 .about-r-text {
-  width: 55%;
+  width: 75%;
   color: black;
   font-weight: 400;
-  font-family: "Merriweather", serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
   padding-bottom: 3%;
 }
 
 /* EXPERINCE section */
 .experience {
-  background-color: #f0f0f0;
+  background-color: #c4c2b0;
   text-align: center;
   padding: 4% 0;
   margin: 1rem 2.5rem 0;
@@ -468,6 +485,20 @@ body {
 
 .exp-btn {
   margin-top: 1.5rem;
+}
+/* new exp */
+.exp-col-1_1 {
+  background: url("../images/amazon-image.jpeg") no-repeat;
+  background-size: 200% 100%; /* This will effectively "zoom" into the image, showing only 50% of it */
+  background-position: center center; /* This will center the visible portion of the image */
+}
+
+.exp-col-1_2 {
+  background: url("../images/huawei-img.jpeg");
+}
+
+.exp-col-1_3 {
+  background: url("../images/harvard.jpeg");
 }
 
 /* exp-1 */
@@ -523,6 +554,14 @@ body {
 
 .exp-show-more-container {
   display: none;
+}
+
+#experience-showMore-cont {
+  transition: all 0.5s ease-in-out;
+}
+
+#exp-show-more-btn {
+  transition: all 0.5s ease-in-out;
 }
 
 /* AWARDS section */
@@ -595,7 +634,7 @@ body {
 
 /* PROJECTS section */
 .projects {
-  background-color: #b0b0b0;
+  background-color: #f0f0df;
   margin: 0 2.5rem 3rem;
   text-align: center;
   padding: 3rem 2rem 2rem;
@@ -763,7 +802,7 @@ body {
 /* CONTACT section */
 .contact {
   margin: 2rem 2rem 0;
-  background-color: #848482;
+  background-color: #fcf0ca;
   padding: 4rem 3rem 2rem;
 }
 
@@ -772,20 +811,20 @@ body {
 }
 
 .contact-l-text {
-  color: white;
+  color: black;
   font-size: 4rem !important;
 }
 
 .contact-r {
-  color: white;
+  color: #9e9fa5;
   text-align: right;
 }
 
 .contact-r-text {
-  color: white;
+  color: #9e9fa5;
   font-size: 1.2rem;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #9e9fa5;
 }
 
 .contact-r-text:hover {
